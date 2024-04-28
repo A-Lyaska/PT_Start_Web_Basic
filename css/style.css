@@ -1,0 +1,45 @@
+body {
+    background-color: #08161e;
+    font-family: 'Courier New', Courier, monospace;
+    color:coral;
+}
+.nav_bar {
+    font-size: 30px;
+    font-weight: bold;
+}
+.container {
+    margin-top: 30px;
+}
+.row {
+}
+.col-8 {
+}
+.col-4 {
+}
+.col-3.nav_logo {
+}
+.col-9 {
+}
+.nav_text {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.img_size {
+}
+.title_photo {
+    text-align: center;
+}
+.photo {
+    background: url(../image/photo.jpg) no-repeat center center;
+    background-size: 200%;
+    width: 500px;
+    height: 500px;
+}
+
+.nav_logo {
+    background: url(../image/logo.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+}
