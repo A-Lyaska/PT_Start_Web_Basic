@@ -16,14 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 index">
-                
-                <?php
-                if (!isset($_COOKIE['User'])) {
-                ?>
-                    <h1>Кто ты?</h1>
-                    <a href="/registration.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>, чтобы просматривать контент!
-                <?php
-                } else {
+                 <?php
                     echo "<h1>Посты</h1>";
                     $link = mysqli_connect('127.0.0.1', 'root', '1', 'first');
 
@@ -37,7 +30,6 @@
                        } else {
                             echo "Записей пока нет";
                        }
-                }
                 ?>
             </div>
         </div>
