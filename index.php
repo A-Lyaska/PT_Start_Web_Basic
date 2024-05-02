@@ -15,8 +15,8 @@
         <div class="row">
             <div class="col-12 index">
                 <?php
-                echo "<h1>Авторизуйтесь!</h1>";
                 if (!isset($_COOKIE['User'])) {
+                    echo "<h1>Авторизуйтесь!</h1>";
                 ?>
                     <a href="/registration.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>!
                 <?php

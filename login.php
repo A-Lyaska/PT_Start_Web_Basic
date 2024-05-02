@@ -42,17 +42,17 @@ if (isset($_COOKIE['User'])) {
 if (isset($_POST['submit'])) {
     $username = $_POST['login'];
     $password = $_POST['password'];
-    
-    if (!$username || !$password) die ('Пожалуйста, введите все значения!');
+
+    if (!$username || !$password) die('Пожалуйста, введите все значения!');
 
     $sql = "SELECT * FROM users WHERE username='$username' AND pass='$password'";
     $result = mysqli_query($link, $sql);
     if (mysqli_num_rows($result) == 1) {
-        setcookie("User", $username, time()+7200);
+        setcookie("User", $username, time() + 7200);
         header('Location: profile.php');
-      } else {
+    } else {
         echo "Неправильное имя или пароль!";
-      }
+    }
 }
 
 ?>
