@@ -1,14 +1,14 @@
 <?php
 $servername = "127.0.0.1";
 $username = "root";
-$password = "1";
+$password = "kali";
 $dbName = "first";
 
 $link = mysqli_connect($servername, $username, $password);
 
 if (!$link) {
     die("Ошибка подключения: " . mysqli_connect_error());
-  }
+}
 
 $sql = "CREATE DATABASE IF NOT EXISTS $dbName";
 
@@ -27,7 +27,7 @@ $sql = "CREATE TABLE IF NOT EXISTS users(
     pass VARCHAR(20) NOT NULL
 )";
 
-if(!mysqli_query($link, $sql)) {
+if (!mysqli_query($link, $sql)) {
     echo "Не удалось создать таблицу Users";
 }
 
@@ -37,10 +37,8 @@ $sql = "CREATE TABLE IF NOT EXISTS posts(
     main_text VARCHAR(400) NOT NULL
 )";
 
-if(!mysqli_query($link, $sql)) {
+if (!mysqli_query($link, $sql)) {
     echo "Не удалось создать таблицу Posts";
 }
 
 mysqli_close($link);
-?>
-
